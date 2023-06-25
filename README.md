@@ -1,7 +1,7 @@
 # Backend Challenge
 This is an API Project that gives various data points on a user's learning plans and incentives as well as other users. 
 
-# API Questions
+## API Questions
 ### How many active users are there for UserToken = 1MEYQDDgwrTkYPtu7Vhfyjp7qkuGnf4ztR company?
 There are 4 active users in that company.
 
@@ -35,7 +35,7 @@ There are 4 active users in that company.
 ### How many incentives is UserToken = 1DeyjK5vvSwjc9o9jYArVo2yov2SnjnXEE eligible for?
 This user is eligible for 5 incentives
 
-# Test Plan Question
+## Test Plan Question
 In this API, we are testing how one user finds out information about other users, their learning plan and their incentives. As such, our tests should revolve around this functionality. 
 
 This means that model, repository, and controller classes should all be extensively tested as they contain the vast majority of the logic behind these API calls. Other enum and migration classes will either be covered by exisiting tests incidentally or will not be relevant to the overall functionality of the API. 
@@ -46,5 +46,5 @@ For unit tests, we should try testing null and unexpected values for the models 
 
 For end-to-end tests, we should see how the API responds to GET calls and mock different repository functions to see how the controllers respond when those functions return different values. 
 
-### Resources Used
+## Resources Used
 Microsoft C# Documentation, Stack Overflow, Chat GPT
