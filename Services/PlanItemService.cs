@@ -4,6 +4,10 @@ using BackendChallenge.Data.Repositories;
 using BackendChallenge.Enums;
 
 namespace BackendChallenge.Services;
+
+/// <summary>
+/// Service class for LearningPlanItems
+/// </summary>
 public class PlanItemService {
 
     private readonly AppDbContext _db;
@@ -17,6 +21,11 @@ public class PlanItemService {
         _ir = new IncentiveRepository(_db);
     }
 
+    /// <summary>
+    /// Creates an API response defined by fields in a Learning Plan Item
+    /// </summary>
+    /// <param name="lpIt">Learning Plan Item</param>
+    /// <returns>PlanItemResponse</returns>
     public PlanItemResponse createPlanItemResponse(LearningPlanItem lpIt) {
         LearningItemType type = lpIt.LearningItemType;
 
